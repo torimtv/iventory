@@ -1,0 +1,69 @@
+<!-- inventory screen -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inventoryStyle.css" type="text/css">
+    <script src="inventoryScript.js" defer></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Inventory</title>
+</head>
+
+<body>
+    <br>
+    <header>
+        <strong id="titleStyle">INVENTORY</strong><br>
+
+        <input list="location-options" id="locations" placeholder="location">
+        <datalist id="location-options">
+            <option value="fridge">
+            <option value="freezer">
+            <option value="pantry">
+            <option value="counter">
+        </datalist><br><br>
+            
+        <form>
+            <input type="text" placeholder="enter item name..." id="itemInput">
+            <input type="text" placeholder="enter amt..." id="amtInput">
+            <input type="button" value="add" id="addButton" onclick="addToTable()">
+
+            <input type="reset" value="reset" id="resetButton">
+        </form><br>
+    </header> <br>
+
+    <input list="filter-options" id="filter" placeholder="filter">
+    <datalist id="filter-options">
+        <option value="alphabetical">
+        <option value="qty">
+    </datalist><br><br>
+
+    <div id="table">
+        <table>
+            <thead>
+                <tr>
+                    <th id="col1">NAME</th>
+                    <th id="col2">AMT</th>
+                    <th id="col3">EDIT</th>
+                    <th id="col4">REMOVE</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="footerBackground">
+        <footer>
+            <a href="inventory.html" id="inventoryIcon"><img src="icons/inventoryIcon.png" alt="inventoryIcon"></a>
+            <a href="shopping.html" id="shoppingIcon"><img src="icons/shoppingIcon.png" alt="shoppingIcon"></a>
+            <a href="recipes.html" id="recipesIcon"><img src="icons/recipesIcon.png" alt="recipesIcon"></a>
+            <a href="profile.html" id="profileIcon"><img src="icons/profileIcon.png" alt="profileIcon"></a>
+        </footer>
+    </div>
+</body>
+
+</html>
